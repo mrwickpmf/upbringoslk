@@ -23,8 +23,11 @@ Features:
 
 
 -> link- https://upbringslk.herokuapp.com/ frontend html page to create transcation from browser instead of api
+  web site screenshots
+  
 
  ![alt text](https://github.com/saikarthikslk/upbringoslk/blob/main/Screenshot_21.png)
+ ![alt text](https://github.com/saikarthikslk/upbringoslk/blob/main/Screenshot_22.png)
  
 
 
