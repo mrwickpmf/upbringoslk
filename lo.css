@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+#er{
+    margin: 15px;
+    margin-left: 0px;
+}

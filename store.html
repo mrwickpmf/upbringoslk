@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./lo.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>store</title>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">TRANSACTION</a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+
+<div class="main">
+  <div class="input-group mb-3 ">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"></span>
+    </div>
+    <input type="text" class="form-control " id="storename" placeholder="store name" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
+ 
+  <div class="input-group mb-3 ">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"></span>
+    </div>
+    <input type="text" class="form-control " id="storemail" placeholder="store email" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
+  
+    <div class="input-group mb-3 ">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"></span>
+      </div>
+      <input type="text" class="form-control " id="storeaddress" placeholder="store address" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    
+      <div class="input-group mb-3 ">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"></span>
+        </div>
+        <input type="text" class="form-control " id="storenumber" placeholder="store number" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+
+    <div class="input-group mb-3 ">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"></span>
+      </div>
+      <input type="text" class="form-control " id="buyername" placeholder="buyer name" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"></span>
+      </div>
+      <input type="text" class="form-control" placeholder="buyer number" id="buyernumber" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"></span>
+      </div>
+      <input type="text" class="form-control" placeholder="item name" aria-label="Username" id="itemname" aria-describedby="basic-addon1">
+    </div>
+
+ 
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"></span>
+    </div>
+    <input type="number" class="form-control" placeholder="item price" aria-label="Username" id="itemprice" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"></span>
+    </div>
+    <input type="number" class="form-control" placeholder="discount %" aria-label="Username" id="itemdis" aria-describedby="basic-addon1">
+  </div>
+  
+  <div class="dropdown" >
+    <button class="btn btn-secondary dropdown-toggle"  type="button" id="m1"type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Quantity
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <button class="dropdown-item" type="button" onclick="q(this.innerHTML)">1</button>
+      <button class="dropdown-item" type="button" onclick="q(this.innerHTML)">2</button>
+      <button class="dropdown-item" type="button" onclick="q(this.innerHTML)">3</button>
+      <button class="dropdown-item" type="button" onclick="q(this.innerHTML)">4</button>
+      <button class="dropdown-item" type="button" onclick="q(this.innerHTML)">5</button>
+      <button class="dropdown-item" type="button" onclick="q(this.innerHTML)">10</button>
+
+    </div>
+
+    
+    <button type="button" class="btn btn-primary" onclick="submit()" data-toggle="button" aria-pressed="false" autocomplete="off">
+      SUBMIT
+    </button>
+    <div class="form-check form-switch" id="er">
+      <input class="form-check-input" type="checkbox" id="flex">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Paid</label>
+    </div>
+
+  </div>
+<script>
+ async function create_store(){
+           var options={
+             method:"POST",
+             headers:{
+               'content-type':'application/json',
+               'Accept':'application/json'
+             },
+             body:JSON.stringify({
+               name:"wick",
+               address:"stress",
+               number:"88588585",
+               email:"slk12@emial.com"
+
+             })
+           }
+          var s=await fetch('/createstore',options)
+          var d=await s.json()
+          console.log(d)
+ }
+function q(e){
+  var m=document.getElementById('m1')
+   m.innerHTML=parseInt(e)
+}
+ async function submit(){
+   var storename=document.getElementById('storename').value
+   var storeaddress=document.getElementById('storeaddress').value
+   var storemail=document.getElementById('storemail').value
+   var storenumber=document.getElementById('storenumber').value
+   var buyername=document.getElementById('buyername').value
+   var buyernumber=document.getElementById('buyernumber').value
+   var itemname=document.getElementById('itemname').value
+   var itemdis=document.getElementById('itemdis').value
+   var itemprice=document.getElementById('itemprice').value
+   var Quantity=parseInt(document.getElementById('m1').innerHTML)
+   var paid=document.getElementById('flex').checked
+   if(paid==="true"){
+     paid=true
+   }
+  var item={
+             item_name:itemname,
+             item_price:itemprice,
+             item_q:Quantity,
+             item_dis:itemdis,
+  }
+  var options={
+             method:"POST",
+             headers:{
+               'content-type':'application/json',
+               'Accept':'application/json'
+             },
+             body:JSON.stringify({
+             buyer_name:buyername,
+             store_name:storename,
+             address:storeaddress,
+             number:storenumber,
+             email:storemail,
+             buyer_number:buyernumber,
+             paid:paid,
+             items:[item]
+             })
+           }
+           console.log(options.body)
+         
+           var s=await fetch('/createinvoice',options)
+          var d=await s.json()
+          console.log(d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
+
+
+</script>    
+</body>
+
+</html>
